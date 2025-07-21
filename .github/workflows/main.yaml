@@ -21,7 +21,7 @@ jobs:
 
       # 3. Add target host to known_hosts to avoid interactive prompts
       - name: Add target to known_hosts
-        run: ssh-keyscan -p 1234 -H 127.0.0.1 >> ~/.ssh/known_hosts
+        run: ssh-keyscan -p 1234 -H  https://margaret-architecture-delivery-developing.trycloudflare.com >> ~/.ssh/known_hosts
 
       # 4. Run the Ansible playbook
       - name: Run Ansible Playbook
